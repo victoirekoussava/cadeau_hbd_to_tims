@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Joyeux anniversaire Timali !</title>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,800;1,9..144,500&family=Figtree:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="hero">
+  <div class="arch"><img src="media/photo1.jpg" alt="Portrait en tailleur camel, cravate et foulard clair"></div>
+  <h1 id="ttl"></h1>
+  <p class="sub" id="sub"></p>
+  <a class="btn" href="#dossier">Ouvrir le dossier</a>
+</header>
+
+<section id="dossier">
+  <h2>Fiche de poste</h2>
+  <div class="fiche">
+    <h3 id="fn"></h3>
+    <p class="t">Dossier confidentiel, à ne montrer à personne (surtout pas aux photos de 6h du matin)</p>
+    <div id="rows"></div>
+    <span class="stamp">Dossier validé</span>
+  </div>
+</section>
+
+<section>
+  <h2>Pièces à conviction</h2>
+  <p>Des preuves, des vraies. Fais glisser, appuie sur lecture, et essaie de ne pas rire.</p>
+  <div class="strip" id="strip"></div>
+</section>
+
+<section>
+  <h2>La chef du jour</h2>
+  <div class="menu">
+    <p class="mt">Menu dégustation miniature</p>
+    <div id="menu"></div>
+    <p class="note">Portions minuscules, talent immense. Les invités sont priés de ne pas vider le plateau avant l’arrivée de la chef.</p>
+  </div>
+</section>
+
+<section>
+  <h2>Pour toi, vraiment</h2>
+  <div class="letter cur" id="letter" aria-live="polite"></div>
+</section>
+
+<section class="finale">
+  <h2>Fais un vœu</h2>
+  <p>Allume ton cœur, puis souffle (ou touche la flamme).</p>
+  <button class="cake" id="cake" aria-label="Souffler la bougie">
+    <span class="fl"></span><span class="cd"></span>
+    <div class="c1"></div><div class="c2"></div>
+  </button>
+  <p id="fin"></p>
+</section>
+<canvas id="cv" aria-hidden="true"></canvas>
+
+<script src="script.js"></script>
+</body>
+</html>
